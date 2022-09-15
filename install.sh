@@ -3,3 +3,4 @@ cp config.fish /home/coder/.config/fish/
 
 echo "Install wanted packages"
 sudo apt-get install -y neofetch lolcat
+sh personalize
