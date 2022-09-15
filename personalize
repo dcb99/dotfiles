@@ -1,7 +1,7 @@
 sudo apt-get install -y neofetch lolcat
 sudo apt-get update
 sudo apt-get install -y fish
-sudo chsh -s /usr/bin/fish $USER
+
 # If ~/.inputrc doesn't exist yet: First include the original /etc/inputrc
 # so it won't get overriden
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
@@ -9,6 +9,7 @@ if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 # Add shell-option to ~/.inputrc to enable case-insensitive tab completion
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
+sudo chsh -s /usr/bin/fish $USER
 mkdir ~/.config/fish
 echo "set PATH /var/tmp/coder/coder-cli $PATH" > ~/.config/fish/config.fish
 
