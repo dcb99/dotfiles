@@ -1,7 +1,6 @@
 sudo apt-get install -y neofetch lolcat
 sudo apt-get update
 
-
 # If ~/.inputrc doesn't exist yet: First include the original /etc/inputrc
 # so it won't get overriden
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
@@ -10,5 +9,3 @@ if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
 npm i @vue/cli
-Xvfb :99&
-export DISPLAY=:99
